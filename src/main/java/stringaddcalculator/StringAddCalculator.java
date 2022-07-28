@@ -33,7 +33,7 @@ public class StringAddCalculator {
         if(isCustomOperation(input)){
             return customsplit(input);
         }
-        return input.split(CalculatorOption.basic_op);
+        return input.split(CalculatorOption.basic_separator);
     }
 
     private static String[] customsplit(String input) {
