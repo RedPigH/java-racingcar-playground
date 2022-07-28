@@ -36,7 +36,7 @@ public class StringAddCalculatorTestUnit {
         assertThat(result).isEqualTo(6);
     }
 
-   /* @Test
+    @Test
     public void splitAndSum_custom_custom_operation() throws Exception {
         int result = StringAddCalculator.splitAndSum("//;\n1;2;3");
         assertThat(result).isEqualTo(6);
@@ -46,5 +46,5 @@ public class StringAddCalculatorTestUnit {
     public void splitAndSum_negative() throws Exception {
         assertThatThrownBy(() -> StringAddCalculator.splitAndSum("-1,2,3"))
                 .isInstanceOf(RuntimeException.class);
-    }*/
+    }
 }
