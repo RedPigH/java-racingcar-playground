@@ -5,12 +5,12 @@ import java.util.regex.Pattern;
 public class CalculatorUtil {
     public static Pattern isdisit = Pattern.compile(CalculatorOption.vaild_num_condition);
     public static boolean checkSingleNum(String input) {
-        if (input.length() == 1 && numVaildate(input)) {
+        if (input.length() == 1 && isPositiveNum(input)) {
             return true;
         }
         return false;
     }
-    public static boolean numVaildate(String token) {
+    public static boolean isPositiveNum(String token) {
         if (!isdisit.matcher(token).matches()) {
             throw new RuntimeException();
         }

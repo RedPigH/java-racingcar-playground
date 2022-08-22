@@ -24,7 +24,7 @@ public class StringAddCalculator {
 
         result = Arrays
                 .stream(formula)
-                .filter((n) -> CalculatorUtil.numVaildate(n))
+                .filter(number -> CalculatorUtil.isPositiveNum(number))
                 .mapToInt(Integer::parseInt)
                 .sum();
 
